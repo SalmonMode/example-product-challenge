@@ -278,3 +278,26 @@ Here's an example of how the client might look and be used:
 [<Message from: Bob at: 2020-01-15 15:58:13.055335 text: 'Hi, Sally!'>, <Message from: Sally at: 2020-01-15 15:58:13.384093 text: 'Hi, Bob!'>]
 >>>
 ```
+
+### Test Scenarios
+
+- Create chat room with unique name
+- Can't create chat room with non-unique name
+- Dismiss error on create page by clicking x
+- Dismiss error on create page by changing name entered
+- Join chat room with unique name
+- Can't join chat room with non-unique name
+- Dismiss error on join page by clicking x
+- Dismiss error on join page  by changing name entered
+- Join chat room with name that is unique to that chat room, but is used in another chat room
+- Can't join modal shown on join page when trying to join an ended chat room
+- Can delete room after trying to join an ended room
+- 404 when trying to join deleted room
+- Can jump straight to ended room if already joined
+- Can send message after joining chat room
+- Can receive message from others after joining chat room
+- Can end chat room with message
+- Chat ended modal shows when someone else ended the chat room
+- Can delete room after it's ended
+- Can jump straight to chat room if already joined that chat room
+- Can't jump straight to chat room without first going through join process
